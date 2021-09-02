@@ -63,6 +63,9 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  height: 80px;
+  width: 60px;
+  float: right;
 }
 
 .saveBtn i:hover {
