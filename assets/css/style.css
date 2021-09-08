@@ -40,6 +40,7 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  padding-top: px;
 }
 
 .past {
@@ -65,6 +66,7 @@ textarea {
   color: white;
   height: 80px;
   width: 60px;
+  margin: 0 auto;
 }
 
 .saveBtn i:hover {
@@ -72,8 +74,7 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-/* .fa-save {
-
+.footer {
+  margin: 25px;
+  padding: 15px;
 }
-
-! fix button icon !

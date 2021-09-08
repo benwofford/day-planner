@@ -1,92 +1,53 @@
 // This sets the date in the Jumbotron
-$(document).add(function() {
-    $("#currentDay").text(moment().format('MMMM Do YYYY'))
- });
-
-
-$(document).ready(function() {
-
-    $(".saveBtn").on("click", function() {
-
-        var value = $(this).siblings('.description').val();
-        var time = $(this).parent().attr("id");
-    
-        console.log(value, time);
-    
-        localStorage.setItem(time, value);
-    });
-
-}); 
-
-var checkHour = [
-    'hour-9',
-    'hour-10',
-    'hour-11',
-    'hour-12',
-    'hour-13',
-    'hour-14',
-    'hour-15',
-    'hour-16',
-    'hour-17',
-];
-
-$(document).ready(function() {
-    if ($(checkHour)<moment()) {
-        $('time-block').css(".past");
-    if ($(checkHour)=moment()) {
-        $('time-block').css(".present");
-    } else ($(checkHour)>moment())
-        $('time-block').css(".future");
-    };
+$(document).add(function () {
+  $("#currentDay").text(moment().format("MMMM Do YYYY"));
 });
-/* These functions check for time and refresh CSS colors --> need fix, close!
-$(document).ready(function() {
-    if ($(moment()>09 && moment()<09,59)) {
-        $("#hour-9").css(".present");
+
+// This sets the save button's function to local storage
+$(document).ready(function () {
+  $(".saveBtn").on("click", function () {
+    var value = $(this).siblings(".description").val();
+    var time = $(this).parent().attr("id");
+
+    console.log(value, time);
+
+    localStorage.setItem(time, value);
+  });
+});
+
+function checkHour() {
+  var currentHour = moment().hours();
+  console.log("current hour:", currentHour);
+
+  // This function checks the current hour against the above function and sets the CSS styling accordingly.
+  $(".time-block").each(function () {
+    var hour = parseInt($(this).attr("id").split("-")[1]);
+    console.log("iterating hour:", hour);
+
+    if (currentHour > hour) {
+      $(this).addClass("past");
+    } else if (currentHour === hour) {
+      $(this).removeClass("past");
+      $(this).addClass("present");
     } else {
-        $("hour-9").css(".past");
+      $(this).removeClass("past");
+      $(this).removeClass("present");
+      $(this).addClass("future");
     }
-    console.log(moment());
-});
+  });
+}
 
-$(document).ready(function() {
-    if ($(moment()>10 && moment()<10,59)) {
-        $("#hour-10").css(".present");
-    } if ($(moment()<10)) {
-        $("#hour-10").css(".future");
-    }    
-    else {
-        $("hour-10").css(".past");
-    }
-});
+checkHour();
 
-$(document).ready(function() {
-    if ($(moment()>11 && moment()<11,59)) {
-        $("#hour-11").css(".present");
-    } if ($(moment()<11)) {
-        $("#hour-11").css(".future");
-    }    
-    else {
-        $("hour-11").css(".past");
-    }
-}); */
+setInterval(checkHour, 15000);
 
-// This saves the input of the description fields into local storage
-$("#hour-9 .description").val(localStorage.getItem('hour-9'));
-// console.log('hour-9');
-$("#hour-10 .description").val(localStorage.getItem('hour-10'));
-// console.log('hour-10');
-$("#hour-11 .description").val(localStorage.getItem('hour-11'));
-// console.log('hour-11');
-$("#hour-12 .description").val(localStorage.getItem('hour-12'));
-// console.log('hour-12');
-$("#hour-1 .description").val(localStorage.getItem('hour-1'));
-// console.log('hour-1');
-$("#hour-2 .description").val(localStorage.getItem('hour-2'));
-// console.log('hour-2');
-$("#hour-3 .description").val(localStorage.getItem('hour-3'));
-// console.log('hour-3');
-$("#hour-4 .description").val(localStorage.getItem('hour-4'));
-// console.log('hour-4');
-$("#hour-5 .description").val(localStorage.getItem('hour-5'));
-// console.log('hour-5');
+// These save the input of the description fields into local storage
+$("#hour-9 .description").val(localStorage.getItem("hour-9"));
+$("#hour-10 .description").val(localStorage.getItem("hour-10"));
+$("#hour-11 .description").val(localStorage.getItem("hour-11"));
+$("#hour-12 .description").val(localStorage.getItem("hour-12"));
+$("#hour-1 .description").val(localStorage.getItem("hour-1"));
+$("#hour-2 .description").val(localStorage.getItem("hour-2"));
+$("#hour-3 .description").val(localStorage.getItem("hour-3"));
+$("#hour-4 .description").val(localStorage.getItem("hour-4"));
+$("#hour-5 .description").val(localStorage.getItem("hour-5"));
