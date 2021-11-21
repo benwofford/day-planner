@@ -1,13 +1,16 @@
-# Coding Quiz #
+# Day Planner
 
-This project's purpose was to help organize a busy schedule.
+This project's purpose was to help organize a busy schedule 📆 🗒️
 
-You can access this project here: https://benwofford.github.io/day-planner/
-## Build Status ##
+## Table of Contents
 
-Fully operational and ready to use.
+- [Screenshots ](#Screenshots)
+- [Features](#Features)
+- [Repository Link](#Repository)
+- [License] (#License)
+- [Questions](#Questions)
 
-## Screenshots ##
+## Screenshots
 
 Notice below that the field accepts an input;
 
@@ -21,29 +24,40 @@ An input in the following 10 AM field below...
 
 ![alt=empty text field because nothing was saved](images/no-save.png)
 
-## Features ##
+## Features
 
 This site will assist in the scheduling of daily tasks with the assistance of local storage on the hard drive and a color coded look at the day ahead.
 
-## Code Example ##
+## Repository
 
---
+- [Github](https://benwofford.github.io/day-planner/)
 
-## Installation ##
+## License
 
---
-## How To Use ##
+MIT License
 
---
+Copyright (c) 2021 Ben Wofford
 
-## Contribute ##
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
---
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-## Credits ##
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
---
+## Questions
 
-## License ##
+For any questions regarding this project, please reach out via email:
 
---
+ben.wofford@hey.com
