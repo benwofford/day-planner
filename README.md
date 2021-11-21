@@ -2,12 +2,13 @@
 
 This project's purpose was to help organize a busy schedule 📆 🗒️
 
+The deployment can be found [here](https://benwofford.github.io/day-planner/)
+
 ## Table of Contents
 
 - [Screenshots ](#Screenshots)
 - [Features](#Features)
 - [Repository Link](#Repository)
-- [License] (#License)
 - [Questions](#Questions)
 
 ## Screenshots
